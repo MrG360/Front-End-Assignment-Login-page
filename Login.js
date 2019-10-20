@@ -29,9 +29,14 @@ function validateSignUp()
     var signUpname=document.forms["signUpForm"]["signupname"].value; 
     var emailSignUp=document.forms["signUpForm"]["email2"].value;
     var passSignUp=document.forms["signUpForm"]["signpass"].value;
+    var letters = /^[A-Za-z]+$/;
     if(signUpname==""||emailSignUp==""||passSignUp=="")
     {
         alert("Field left empty");
+    }
+    if(!signUpname.match(letters))
+    {
+        alert('Please input alphabet characters only');
     }
     else if(signUpname.length<4)
     {

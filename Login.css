@@ -92,8 +92,8 @@ button:focus {
 }
 
 button.hideit {
-	background-color: transparent;
-	border-color: #FFFFFF;
+	background-color: #F83839;
+	border-color: #F83839;
 }
 
 form {
