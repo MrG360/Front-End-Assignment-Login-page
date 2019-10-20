@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="Login.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+<div class="container" id="container">
+	<div class="form-container sign-up-container">
+		<form  name="signUpForm">
+            <h1>Create Account</h1>
+			<div class="social-container">
+				<a href="#" class="fa fa-facebook social"></a>
+				<a href="#" class="fa fa-google social"></a>
+				<a href="#" class="fa fa-linkedin social"></a>
+            </div>
+			<span>or use your email for registration</span>
+			<input type="text" placeholder="Name" name="signupname"/>
+			<input type="email" placeholder="Email" name="email2"/>
+			<input type="password" placeholder="Password" name="signpass" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" />
+			<button onclick="validateSignUp()">Sign Up</button>
+		</form>
+	</div>
+	<div class="form-container sign-in-container">
+		<form  name="signInForm">
+			<h1>Sign in</h1>
+			<div class="social-container">
+                    <a href="#" class="fa fa-facebook social"></a>
+                    <a href="#" class="fa fa-google social"></a>
+                    <a href="#" class="fa fa-linkedin social"></a>
+			</div>
+			<span>or use your account</span>
+			<input type="email" placeholder="Email" name="email1"/>
+			<input type="password" placeholder="Password" name="signinpass" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" />
+			<a href="#">Forgot your password?</a>
+			<button onclick="validateSignIn()">Sign In</button>
+		</form>
+	</div>
+	<div class="overlay-container">
+		<div class="overlay">
+			<div class="overlay-panel overlay-left">
+				<h1>Welcome Back to Fitness First!</h1>
+				<p>Log In to continue your fitness journey</p>
+				<button class="hideit" id="signIn">Sign In</button>
+			</div>
+			<div class="overlay-panel overlay-right">
+				<h1>Welcome to Fitness First</h1>
+				<p>Enter your personal details and start fitness journey with us</p>
+				<button class="hideit" id="signUp">Sign Up</button>
+			</div>
+		</div>
+	</div>
+</div>
+<script src="Login.js"></script>
+</body>
+</html>
